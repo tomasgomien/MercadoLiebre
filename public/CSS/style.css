@@ -42,11 +42,17 @@ body {
 
 .search-bar input{
     height: 50%;
-    width: 100%;
+    width: 90%;
+    border: none;
+    
 }
 
 .search-bar button{
     height: 50%;
+    width: 5%;
+    border: none;
+    border-left: 1px solid #666;
+    background-color: white;
 }
 
 .burguer-button{
@@ -293,3 +299,43 @@ body {
 
 
 @media (min-width:769px){}
+
+/* ------------------------------------------ Form --------------------------------------------- */
+
+.register-form{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ebebeb;
+}
+
+.register-form div{
+    margin: 30px 10px;
+}
+
+.register-form-element{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form-element label{
+    margin-bottom: 15px;
+}
+
+.register-form-element input{
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-form-category{
+    height: px;
+}
+
+.register-buttons{
+    background-color: #03264C;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
