@@ -5,98 +5,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="normalize/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div>
-            <img src="/img/logo-mercado-liebre.svg" class="imagen"></img>
+<body style="margin:0px">
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/img/logo-mercado-liebre.svg" class="logo"></img>
+            <nav class="search-bar" >
+                <input  type="text" placeholder="Buscar productos, Marcas" >
+                <button ><i class="fa-solid fa-magnifying-glass"></i></button>    
+            </nav >
+            <h4><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</h4>
         </div>
-        <nav class="search-bar" >
-            <input  type="text" placeholder="Buscar productos, Marcas" >
-            <button ><i class="fa-solid fa-magnifying-glass"></i></button>    
-        </nav >
-        <h4 class="compra-en-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</h4>
-        <div >
-            <ul type="none" class="nav-bar" >
-                <li>
-                    <a href="" class="nav-bar">Tiendas Oficiales</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar">Ofertas</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar">Vender</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar">Ayuda</a>
-                </li>
-                <br>
-                <li>
-                    <a href="" class="nav-bar">Crea tu cuenta</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar">Ingresa</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar">Mis compras</a>
-                </li>
-            </ul>
-        <div class="alineado">
-            <div class="bars">
-            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
-            </div>
+        <div class="main-header-bottom-bar">
+            <button class="burguer-button">
+                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+            </button>
+            <nav class="header-bars">
+                <ul class="nav-bar" >
+                    <li>
+                        <a href="" >Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="" >Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="" >Vender</a>
+                    </li>
+                    <li>
+                        <a href="" >Ayuda</a>
+                    </li>
+                </ul>
+                <ul class="login-bar">
+                    <li>
+                        <a href="" >Crea tu cuenta <i class="fa-regular fa-id-card" style="color: #070709;"></i></a>
+                    </li>
+                    <li>
+                        <a href="" >Ingresa <i class="fa-solid fa-right-to-bracket" style="color: #040506;"></i></a>
+                    </li>
+                    <li>
+                        <a href="" >Mis compras <i class="fa-solid fa-basket-shopping" style="color: #06070a;"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>      
+        
+        <div>
+            <img src="/img/img-home-banner.jpg" style="width: 100%;display: flex;">
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h4 class="titulares">Basado en tu ultima visita</h4>
-                <article>
-                    <img src="/img/img-cafetera-moulinex.jpg" class="imagenes-tamanio">
-                    <br>
-                    <label class="precio">$6770</label>
-                    <br>
-                    <label class="descuentos-descripciones">40% off</label>
-                    <br>
-                    <label class="descuentos-descripciones">Cafetera Moulinex</label>
-                </article>
+        
+
+    <main class="main-products">
+        <h4 >Basado en tu ultima visita</h4>
+            <section class="main-ultima-visita">
+                <div class="product">
+                    <div>
+                        <img src="/img/img-cafetera-moulinex.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>                       
+                       <label class="product-price">$6770</label>
+                       <br>
+                       <label class="product-discount">40% off</label>
+                       <br>
+                       <label class="product-description">Cafetera Moulinex</label>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="/img/img-cafetera-moulinex.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>                       
+                       <label class="product-price">$6770</label>
+                       <br>
+                       <label class="product-discount">40% off</label>
+                       <br>
+                       <label class="product-description">Cafetera Moulinex</label>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="/img/img-cafetera-moulinex.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>                       
+                       <label class="product-price">$6770</label>
+                       <br>
+                       <label class="product-discount">40% off</label>
+                       <br>
+                       <label class="product-description">Cafetera Moulinex</label>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="/img/img-cafetera-moulinex.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>                       
+                       <label class="product-price">$6770</label>
+                       <br>
+                       <label class="product-discount">40% off</label>
+                       <br>
+                       <label class="product-description">Cafetera Moulinex</label>
+                    </div>
+                </div>
         </section>
-            <h4 class="titulares">Sección de Ofertas</h4>
-                <article>
-                    <img src="/img/img-macbook-pro-2019.jpg" class="imagenes-tamanio">
-                    <br>
-                    <label class="precio">Precio</label>
-                    <br>
-                    <label class="descuentos-descripciones">Descuento</label>
-                    <br>
-                    <label class="descuentos-descripciones">Mac Book Pro</label>
-                </article>
-        <section>
+        <h4>Sección de Ofertas</h4>
+            <section class="main-ofertas">
+                <div class="product">
+                    <div>
+                        <img src="/img/img-macbook-pro-2019.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>     
+                        <label class="product-price">$20500</label>
+                        <br>
+                        <label class="product-discount">20% off</label>
+                        <br>
+                        <label class="product-description">Mac Book Pro</label>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="/img/img-macbook-pro-2019.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>     
+                        <label class="product-price">$20500</label>
+                        <br>
+                        <label class="product-discount">20% off</label>
+                        <br>
+                        <label class="product-description">Mac Book Pro</label>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="/img/img-macbook-pro-2019.jpg">
+                    </div>
+                    <div class="price-discount-box"> 
+                        <div class="container-delivery-truck">
+                            <i class="fa-solid fa-truck delivery-truck"></i> 
+                        </div>     
+                        <label class="product-price">$20500</label>
+                        <br>
+                        <label class="product-discount">20% off</label>
+                        <br>
+                        <label class="product-description">Mac Book Pro</label>
+                    </div>
+                </div>
         </section>
     </main>
 
-    <footer>
-        <section >
+    <footer class="footer-articles">
+        <article>
+            <i class="fa-solid fa-credit-card"></i>
             <h3>Pagá con tarjeta o efectivo</h3>
-            <p class="descuentos-descripciones">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-gift"></i>
             <h3>Envío gratis desde $ 2.500</h3>
-            <p class="descuentos-descripciones">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-user-shield"></i>
             <h3>Seguridad, de principio a fin</h3>
-            <p class="descuentos-descripciones">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
                 .</p>
-        </section>
-        <section>
-            <label class="texto">Copyright © 1999-2020 MercadoLiebre S.R.L.</label>
-        </section>
+        </article>
+        <div class="footer-copyrigth">
+            <label>Copyright © 1999-2020 MercadoLiebre S.R.L.</label>
+        </div>
 
     </footer>  
     <script src="https://kit.fontawesome.com/4c838bbcd7.js" crossorigin="anonymous"></script> 
