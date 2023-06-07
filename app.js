@@ -16,6 +16,6 @@ app.get('/register',function(req,res){
     res.sendFile((__dirname + '/views/register.html'))
 });
 
-app.listen(3000,function(){
+app.listen(3001,function(){
     console.log("Servidor corriendo");
 });
