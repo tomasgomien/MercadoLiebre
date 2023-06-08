@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('normalize',express.static(path.join(__dirname, '/node_modules/normalize.css')));
 
-app.get('/home',function(req,res){
+app.get('/',function(req,res){
     res.sendFile((__dirname + '/views/home.html'))
 });
 
