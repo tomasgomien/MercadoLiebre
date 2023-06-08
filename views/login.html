@@ -16,7 +16,7 @@
         <header class="main-header-form">
             <div class="main-header-top-bar">
                 <div>
-                    <img src="/img/logo-mercado-liebre.svg" class="logo"></img>
+                    <a href="/home"><img src="/img/logo-mercado-liebre.svg" class="logo"></img></a>
                 </div>
                 <nav class="search-bar" >
                     <input  type="text" placeholder=" Buscar productos, marcas y más" >
@@ -60,19 +60,25 @@
                 </nav>
             </div>      
         </header>
+        
         <h3 class="titulo-login">Entra a tu cuenta de Mercado Liebre</h3>
-        <form action="/" method="POST" class="register-form">
-            <div class="register-form-element">
+        
+        <form action="/" method="POST" >
+        <div class="login-form">
+            <div class="login-form-element">
                 <input type="text" name="usuario" placeholder="nombre de usuario" class="inputs">
             </div>
-            <div class="register-form-element">
+            <div class="login-form-element">
                 <input type="password" name="password" placeholder="contraseña" class="inputs">
             </div>
             <div>
                 <button type="submit" class="login-button">Ingresar</button>
             </div> 
-            <a href="" name="olvidoContraseña" class="login-button-text"> Olvido su contraseña </a>
-            <a href="/register" name="olvidoContraseña" class="login-button-text"> Registrar una cuenta nueva </a>      
+            <div class="login-text">               
+                <a href="" name="olvidoContraseña" class="login-button-text"> Olvido su contraseña </a>
+                <a href="/register" name="registrarcuenta" class="login-button-text"> Registrar una cuenta nueva </a>
+            </div>
+        </div>          
         </form>    
         
         <script src="https://kit.fontawesome.com/4c838bbcd7.js" crossorigin="anonymous"></script> 
