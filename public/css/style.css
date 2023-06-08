@@ -194,6 +194,7 @@ body {
 .main-products h4{
     font-size: 24px;
     text-align: center;
+    margin: 15% 0;
 }
 
 .product{
@@ -272,8 +273,10 @@ body {
 }
 
 .main-products h4{
-    font-size: 28px;
-    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: start;
+    margin: 2% 2% 0;
 }
 
 .product{
@@ -294,6 +297,7 @@ body {
 footer {
     background-color: white;
     color:#666;
+    padding: 3% 2% 0;
 }
 .footer-articles{
     text-align:center;
