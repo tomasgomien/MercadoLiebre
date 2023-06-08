@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Mercado Liebre</title>
         <link rel="stylesheet" href="normalize/normalize.css">
         <link href="css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
-<body>
-    <body style="margin:0px">
-        <header class="main-header">
+
+    <body style="margin:0px;">
+        <header class="main-header-form">
             <div class="main-header-top-bar">
                 <div>
                     <img src="/img/logo-mercado-liebre.svg" class="logo"></img>
@@ -60,6 +60,21 @@
                 </nav>
             </div>      
         </header>
-    
-</body>
+        <h3 class="titulo-login">Entra a tu cuenta de Mercado Liebre</h3>
+        <form action="/" method="POST" class="register-form">
+            <div class="register-form-element">
+                <input type="text" name="usuario" placeholder="nombre de usuario" class="inputs">
+            </div>
+            <div class="register-form-element">
+                <input type="password" name="password" placeholder="contraseña" class="inputs">
+            </div>
+            <div>
+                <button type="submit" class="login-button">Ingresar</button>
+            </div> 
+            <a href="" name="olvidoContraseña" class="login-button-text"> Olvido su contraseña </a>
+            <a href="/register" name="olvidoContraseña" class="login-button-text"> Registrar una cuenta nueva </a>      
+        </form>    
+        
+        <script src="https://kit.fontawesome.com/4c838bbcd7.js" crossorigin="anonymous"></script> 
+    </body>
 </html>

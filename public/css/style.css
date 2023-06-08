@@ -4,12 +4,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 /* ---------------------------------------- Header- Mobile --------------------------------------------- */
 .main-header {
     background-color: #EAC926;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .main-header-top-bar{
@@ -66,7 +67,7 @@ body {
 }
 
 .header-bars{
-    display: none;
+    display: none;   
 }
 
 .main-header-bottom-bar:hover{
@@ -95,6 +96,10 @@ body {
 /* ---------------------------------------- Header-desktop --------------------------------------------- */
 
 @media (min-width:769px){
+
+.main-header{
+    font-size: 18px;
+}
 
 .main-header-top-bar{
         display: flex;
@@ -183,7 +188,6 @@ body {
 
 .main-products{
     padding: 2vw;
-    background-color: #ebebeb;
     color: #666;
 }
 
@@ -195,14 +199,18 @@ body {
 .product{
     background-color: white;
     margin: 5% 0;
-    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-
+    border-radius: 4px;
+    border: solid 1px white;
+    transition: all  400ms;
 }
 
 .product:hover{ 
-    .product-description{
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+.product:hover .product-description{
         display: flex;
-        margin-top: 10px;}   
+        margin-top: 10px;   
 }
 
 .price-discount-box{
@@ -234,7 +242,9 @@ body {
 }
 
 .product-price{
-    font-size: 18px;
+    font-size: 20px;
+    color: black;
+    margin-right: 5px;
 }
 
 .product-discount{
@@ -244,6 +254,7 @@ body {
 
 .product-description{
     display: none;
+    transition: all 400ms;
 }
 
 /* ---------------------------------------- Main-desktop --------------------------------------------- */
@@ -260,10 +271,20 @@ body {
     flex-wrap: wrap;
 }
 
+.main-products h4{
+    font-size: 28px;
+    text-align: center;
+}
+
 .product{
     margin: 2%;
-    width:20%;
-    height:20%;
+    width:21%;
+    font-size: 18px;
+}
+
+.product-price{
+    font-size: 24px;
+    color: black;
 }
 
 }
@@ -271,6 +292,7 @@ body {
 /* ------------------------------------------ Footer --------------------------------------------- */
 
 footer {
+    background-color: white;
     color:#666;
 }
 .footer-articles{
@@ -334,6 +356,11 @@ footer {
 }
 
 /* ------------------------------------------ Form --------------------------------------------- */
+.main-header-form{
+    padding-bottom: 1%;
+    background-color: #EAC926;
+    font-size: 16px;
+}
 
 .register-form{
     padding: 10px;
@@ -343,7 +370,7 @@ footer {
 }
 
 .register-form div{
-    margin: 30px 10px;
+    padding: 20px 10px;
 }
 
 .register-form-element{
@@ -351,18 +378,24 @@ footer {
     flex-direction: column;
 }
 
+.register-form-category{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .register-form-element label{
     margin-bottom: 15px;
 }
 
-.register-form-element input{
+.inputs{
     height: 35px;
     border: none;
     border-radius: 5px;
 }
 
-.register-form-category{
-    height: px;
+.button-box{
+    padding: 0 20px 10px;
 }
 
 .register-buttons{
@@ -371,4 +404,76 @@ footer {
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
+    width: 30vw;
+}
+
+.register-buttons:hover{
+    transform: scale(1.01);
+    opacity: 70%;
+}
+
+.titulo-login{
+    text-align: center;
+    font-weight: 200;
+    margin: 10% 0;
+}
+
+.login-button{
+    background-color: #03264C;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    transition: all 400ms;
+}
+
+.login-button:hover{
+    transform: scale(1.01);
+    opacity: 70%;
+}
+
+.login-button-text{
+    text-decoration: none;
+    color: #03264C;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+@media (min-width:769px){
+
+.register-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around;
+    position: relative;
+}
+
+.register-form-element{
+    width: 40vw; 
+    margin: 10px 0;
+}
+
+.register-form-category{
+    width: 40vw; 
+}
+
+.register-form-element input{
+    height: 50px;
+}
+
+.buttons-box{
+    position: relative;
+    top: 25px;
+    left: 180px;
+}
+
+.register-buttons{
+    width: 20vw;
+}
+
 }
